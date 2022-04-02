@@ -1,0 +1,31 @@
+<!-- maxHeight{INT}: highest point in meters -->
+<!-- maxDepth{INT}: deepest point in meters -->
+<!-- blockExtent{DOUBLE}: extent of a block in meters -->
+<!-- blocksPerDegree{INT}: number of blocke per degree longitude.
+     Defines the circumference of the planet in meters: blocksPerDegree * blockExtent * 360° -->
+<!-- Beschreibung der Winkelangaben (bspw. lonStart, lonEnd):
+Breitengrade werden in Winkelgraden angegeben, die jedoch um den ganzen Globus gehen. 
+Nordhalbkugel: 0° ist Äquator, 90° Nordpol, +180° ist gegenüberliegender Äquator.
+Südhalbkugel:  0° ist Äquator, -90° Südpol, -180° ist gegenüberliegender Äquator.
+Der Grund dafür ist, dass wir ja eine Kugelwelt haben, auf der man aussen herum laufen kann.
+-->
+<WORLD 
+maxHeight="20" 
+maxDepth="-20"
+blockExtent="0.5" 
+blocksPerDegree="100" 
+>
+<BIOME key="blackDesert" name="Schwarzwüste" lonStart="-1" lonEnd="1">
+	<TERRAIN  maxHeight="10" maxDepth="-10" material="Sand_001">
+		<TERRAIN_FUNCTION intensity="1" frequency="1" offset="0"/>
+<!--		
+		<TERRAIN_FUNCTION intensity="1" frequency="2" offset="1"/>
+		<TERRAIN_FUNCTION intensity="1" frequency="3" offset="0"/>
+		-->
+		<TERRAIN_LAYER maxHeight="1" maxDepth="-10" stamp="Stamp_001" material="Coal_001" count="200"/>
+		<TERRAIN_LAYER maxHeight="-1" maxDepth="-5" stamp="Stamp_001" material="Coal_101" count="100"/>
+		<TERRAIN_LAYER maxHeight="5" maxDepth="-3" stamp="Stamp_Cave001" material="" count="10"/>
+		<TERRAIN_LAYER maxHeight="5" maxDepth="-3" stamp="Stamp_KingsCave" material="" count="1"/>
+	</TERRAIN>
+</BIOME>
+</WORLD>

@@ -1,0 +1,5 @@
+<AC_CHEMICAL_ENTITIES>
+  <CHEMICAL_ENTITY code="H" name="Wasserstoff" probability="1" mass="1,00784" />
+  <CHEMICAL_ENTITY code="O" name="Sauerstoff" probability="1" mass="15,999" />
+  <CHEMICAL_ENTITY code="H2O" name="Wasser" probability="1" mass="17" />
+</AC_CHEMICAL_ENTITIES>

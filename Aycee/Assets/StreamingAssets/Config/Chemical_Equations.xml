@@ -1,0 +1,4 @@
+<AC_CHEMICAL_REACTION_RULES>
+  <CHEMICAL_RULE input="H+H+O" output="H2O" minKelvin="0" maxKelvin="-1" minPascal="0" maxPascal="-1" />
+  <CHEMICAL_RULE input="C+O+O" output="CO2" minKelvin="0" maxKelvin="-1" minPascal="0" maxPascal="-1" />
+</AC_CHEMICAL_REACTION_RULES>
